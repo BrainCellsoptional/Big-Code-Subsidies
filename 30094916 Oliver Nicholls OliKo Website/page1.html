@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="page-1" content="width=device-width, inital-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css"type="text/css">
+    <link rel="stylesheet" href="css/nav.css" type="text/css">
+    <script type="module" src="/java/java.js"></script>
+    <title>page-1</title>
+</head>
+<!--nav bar -->
+<body>
+<div class="flex1">
+    <div>
+    <nav>        
+        <ul>
+                <li><a href="page1.html"> Home </a></li>
+                <li><a href="page2.html"> Interactive Map </a></li>
+                <li><a href="page3.html"> Video </a></li>
+                <li><a href="page4.html"> Resources </a></li>
+        </ul>
+    </div>
+    <div class="logo">
+        <img src="Images/logo.jpg" alt="NZ logo"   width="150" height="auto">        
+    </div>
+    </nav>
+</div>
+<div class="bar"></div>
+
+<div class="center">
+    <h1>New Zeland Regional Rankings</h1>
+<div class="video">
+    <video autoplay loop muted plays-inline class="pos" width="75%" height="auto">
+        <source src="Videos/Intro_cut.mp4" type="video/mp4"> 
+    </video>
+</div>
+</div>
+<!--Brief instructions/intro and image on nz power-->
+<div class="center">
+    <div class="textbox">
+        <div class="partext"><p>Carbone emissions are on the rise these days, 
+            so OliKo has partnered with Green Tech and Greenpeace to rank New Zealand cities from highest carbon emissions to lowest. 
+            We will also show which regions have made the largest reductions in carbon emissions over the last 10 years.<br><br>
+
+            Below is a table ranking New Zealand cities. Please click on a few to get more information about the city and where their carbon emissions come from.    </p>
+        </div>
+        <div>
+            <img src="Images/pie.jpg" alt="Pie Chart" width="550px" height="350px">
+        </div> 
+    </div>
+
+
+<!--The table-->
+<!--headings in th-->
+<!--rows in tr-->
+<!--information in td-->
+<!--onclick allows detection of user clicking-->
+    <h2>Information Table</h2>
+<table id="infoTable">
+    <tr>
+        <th>Region</th>
+        <th>Ranking</th>
+        <th>Co2 emissions in Kiliotones <br>in 2021</th>
+        <th>Percent of NZ Co2 Emisions</th>
+        <th>Change in Kiliotones <br> (2007 - 2021)</th>
+        <th>Percent Change <br> (2007 - 2021)</th>
+        <th>Co2 Per Capita</th>
+        <th>Co2 Emisions (tones) per $(million) of GDP</th>
+    </tr>
+    <tr onclick="updateInfo('Waikato', 1)">
+        <td>Waikato</td>
+        <td>1</td>
+        <td>16,217</td>
+        <td>20.7</td>
+        <td>972</td>
+        <td>6.4</td>
+        <td>32.0</td>
+        <td>544.8</td>
+    </tr>
+    <tr onclick="updateInfo('Canterbury', 2)">
+        <td>Canterbury</td>
+        <td>2</td>
+        <td>12,049</td>
+        <td>15.4</td>
+        <td>1,721</td>
+        <td>16.7</td>
+        <td>18.5</td>
+        <td>282.9</td>
+
+    </tr>
+    <tr onclick="updateInfo('Auckland', 3)">
+        <td>Auckland</td>
+        <td>3</td>
+        <td>9,726</td>
+        <td>12.4</td>
+        <td>-2,217</td>
+        <td>-18.6</td>
+        <td>5.7</td>
+        <td>80.5</td>
+        
+    </tr>
+    <tr onclick="updateInfo('Southland', 4)">
+        <td>Southland</td>
+        <td>4</td>
+        <td>6,186</td>
+        <td>7.9</td>
+        <td>444</td>
+        <td>7.7</td>
+        <td>60.2</td>
+        <td>938.4</td>
+    </tr>
+    <tr onclick="updateInfo('Manawatu-Whanganui', 5)">
+        <td>Manawatu-Whanganui</td>
+        <td>5</td>
+        <td>5,816</td>
+        <td>7.4</td>
+        <td>-239</td>
+        <td>-4.0</td>
+        <td>22.7</td>
+        <td>449.7</td>
+    </tr>
+    <tr onclick="updateInfo('Otago', 6)">
+        <td>Otago</td>
+        <td>6</td>
+        <td>5,142</td>
+        <td>6.6</td>
+        <td>351</td>
+        <td>7.3</td>
+        <td>20.8</td>
+        <td>369.1</td>
+    </tr>
+    <tr onclick="updateInfo('Taranaki', 7)">
+        <td>Taranaki</td>
+        <td>7</td>
+        <td>5,002</td>
+        <td>6.4</td>
+        <td>-1,327</td>
+        <td>-21.0</td>
+        <td>39.6</td>
+        <td>644.1</td>
+    </tr>
+    <tr onclick="updateInfo('Northland', 8)">
+        <td>Northland</td>
+        <td>7</td>
+        <td>4,049</td>
+        <td>5.2</td>
+        <td>-1382</td>
+        <td>-25.4</td>
+        <td>20.5</td>
+        <td>492.9</td>
+    </tr>
+    <tr onclick="updateInfo('Hawkes Bay', 9)">
+        <td>Hawke's Bay</td>
+        <td>9</td>
+        <td>3,367</td>
+        <td>4.3</td>
+        <td>-61</td>
+        <td>-1.8</td>
+        <td>18.5</td>
+        <td>342.1</td>
+    </tr>
+    <tr onclick="updateInfo('Bay of Plenty', 10)">
+        <td>Bay of Plenty</td>
+        <td>10</td>
+        <td>3,336</td>
+        <td>4.3</td>
+        <td>369</td>
+        <td>12.3</td>
+        <td>9.7</td>
+        <td>168.7</td>
+    </tr>
+</table>
+<!--Output for the table once the user clicks-->
+<!--the images and text here are defults and will be overwritten once the user clicks-->
+    <div class="info">
+        <p id="selectedInfo" class="partext">Click on a row to see details here.</p>
+        <img id="selectedImage" src="Images/NZmap.jpg" alt="Image of City" style="max-width: 700px; height: 10;">
+    </div>
+</div>
+<!--runs java, table wont work without it-->
+<script src="Java/java.js"></script>
+
+
+
+
+
+
+
+
+
+
+<!--footer -->
+<div class="footer">
+    <p>Green Tech Inc
+        OliKo Studios<br>
+    For More information <br>
+    exampleemail@email.com <br>
+    ph: 021 123 456
+    </p>
+</div>
+</div>
+
+</body>
+</html>

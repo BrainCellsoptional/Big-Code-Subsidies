@@ -1,0 +1,80 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="page-1" content="width=device-width, inital-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css"type="text/css">
+    <link rel="stylesheet" href="css/nav.css" type="text/css">
+    <script type="module" src="/java/java.js"></script>
+    <title>page-1</title>
+</head>
+<!--nav bar -->
+<body>
+<div class="flex1">
+    <div>
+    <nav>        
+        <ul>
+                <li><a href="page1.html"> Home </a></li>
+                <li><a href="page2.html"> Interactive Map </a></li>
+                <li><a href="page3.html"> Video </a></li>
+                <li><a href="page4.html"> Resources </a></li>
+        </ul>
+    </div>
+    <div class="logo">
+        <img src="Images/logo.jpg" alt="NZ logo"   width="150" height="auto">        
+    </div>
+    </nav>
+</div>
+<div class="bar"></div>
+
+
+<!--Title + instructions-->
+<div class="center">
+    <h1>What Can you do to help?</h1>
+    <div class="partext2">
+        Bellow we some videos that can tell you how you can reduce Co2 Emissions in New Zealand,
+        what you can do to help and what NZ is doing to lower Co2 Emissions.<br><br>
+        Just click play and your ready to go.
+    </div>
+    <br>
+    <br>
+    <!--video tag, controls allows the user to pause, play and adjust volume-->
+    <!--the src="Videos/vid1.mp4#t=1 defines the defualt video i.e the first video-->
+    <!--#t=1 starts the video 1 second in so the user dosnt see a black screen-->
+    <div class="video">
+        <video id="vid"controls plays-inline class="pos" width="60%" height="auto">
+            <source src="Videos/vid1.mp4#t=1" type="video/mp4">  
+        </video>
+        <h2 id="vidtext">This Video will Explains what Co2 is in simple terms and where it comes from</h2>
+    </div>
+    <!--simple buttons-->
+    <button class="button" id="back">Back</button>
+    <button class="button"id="next">Next</button>
+    <!--runs the java script-->
+    <script src="Java/java.js"></script>
+</div>
+
+
+
+
+
+
+
+
+<!--footer -->
+<div class="footer">
+    <p>Green Tech Inc
+        OliKo Studios<br>
+    For More information <br>
+    exampleemail@email.com <br>
+    ph: 021 123 456
+    </p>
+</div>
+</div>
+
+</body>
+</html>
